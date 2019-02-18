@@ -326,6 +326,7 @@ public class HttpServer implements Runnable {
     }
 
     public static void main(String[] args) {
+        System.out.println("aaa");
         int port = 9999;
         HttpServer httpServer = new HttpServer(port).handler(new DemoHandler());
         System.out.println("startup up a server at port:" + port + " waiting for requests...");
